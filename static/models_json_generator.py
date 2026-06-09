@@ -456,13 +456,13 @@ generationMap = [
         "release_firmware": "5.1x.y",
         "generation_nicknames": ["KT4"],
         "amazon_name": "Kindle (10th Generation)",
-        "last_firmware": "5.18.1",
+        "last_firmware": "Not Yet Discontinued",
         "platform": "Rex",
         "board": "Moonshine",
         "jailbreak": produce_jb_links(
             JB("WinterBreak2 < 5.16.4", "/jailbreaking/WinterBreak2"),
             JB("WinterBreak < 5.18.1", "/jailbreaking/WinterBreak"),
-            JB("AdBreak 5.18.1+", "/jailbreaking/AdBreak"),
+            JB("AdBreak 5.18.1", "/jailbreaking/AdBreak"),
         ),
     },
     # Kindle PaperWhite 4, released November 7 2018 on FW 5.10.0.1/5.10.0.2
@@ -472,13 +472,13 @@ generationMap = [
         "release_firmware": "5.10.0.1/5.10.0.2",
         "generation_nicknames": ["PW4"],
         "amazon_name": "Kindle Paperwhite (10th Generation)",
-        "last_firmware": "5.18.1",
+        "last_firmware": "Not Yet Discontinued",
         "platform": "Rex",
         "board": "Jaeger",
         "jailbreak": produce_jb_links(
             JB("WinterBreak2 < 5.16.4", "/jailbreaking/WinterBreak2"),
             JB("WinterBreak < 5.18.1", "/jailbreaking/WinterBreak"),
-            JB("AdBreak 5.18.1+", "/jailbreaking/AdBreak"),
+            JB("AdBreak 5.18.1", "/jailbreaking/AdBreak"),
         ),
     },
     # Kindle x Migu, released 2017 on FW 5.7.2.8 (Based on Android 5.1.1?)
