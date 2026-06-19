@@ -380,7 +380,7 @@ generationMap = [
         "platform": "Bellatrix4",
         "board": "Seabreeze",
         "jailbreak": produce_jb_links(
-            JB("WinterBreak < 5.18.0.2", "/jailbreaking/WinterBreak"),
+            JB("WinterBreak < 5.18.1", "/jailbreaking/WinterBreak"),
         ),
     },
     # Kindle Scribe, released December 2022 on FW 5.16.0
