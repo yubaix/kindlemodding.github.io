@@ -42,39 +42,15 @@ example_package
 | install.sh   | Ran during package installation after it is unpacked    |
 | uninstall.sh | Ran during package uninstallation after it is unmounted |
 | launch.sh    | Ran when package is launched from a launcher            |
-| startup.sh    | Ran when the Kindle boots and `hdnext` is initialised |
+| startup.sh   | Ran when the Kindle boots and `hdnext` is initialised   |
 
 <p class="warning">Hooks <b>MUST NOT</b> write to rootfs or remount it as rw, see below for more details</p>
 
 Hooks are always ran from the package's folder whilst the package is in an unpacked state, this means you can reference local files with relative paths.
 
-It is encouraged to use the `install.sh` hook to drop a scriptlet in the `/mnt/us/documents` folder when appropriate.
+It is encouraged to use the `install.sh` hook to place a scriptlet in the `/mnt/us/documents` folder when appropriate.  
+It is recommended that the scriptlet runs `/var/local/kmc/bin/kpm launch PACKAGENAME` to run the package's `launch.sh`
 
 ## Writing To Rootfs
-Due to the rootless nature of `hdnext` jailbreaks and modern Kindle firmware, it is not possible to write to the rootfs directly. Luckily an alternative exists using `bind` mounts and `overlayfs`, this is implemented by the `hdnext` system.
-
-Anything you want to be written to `rootfs` must be placed in a special folder in your package called `rootfs`, for example:
-
-```sh
-example_package
-├── install.sh
-├── launch.sh
-├── manifest.json
-├── rootfs
-│   └── opt
-│       └── amazon
-│           └── ebook
-│               └── lib
-│                   └── json_simple-1.1.jar
-└── uninstall.sh
-
-6 directories, 5 files
-```
-In this case, the file at `/opt/amazon/ebook/lib/json_simple-1.1.jar` would be overwritten via overlayfs with the one from `example_package`
-
-### Notes on rootfs and hooks
-Rootfs overlay operations always happen **BEFORE** the install and uninstall hooks, that is to say when `install.sh` runs, the file is already overlaid, and when `uninstall.sh` runs, the file is already removed.
-
-The majority of packages will **NOT** need to use rootfs overlays, be certain that there is no other way to do what you are trying to before you do it.
-
-<p class="warning">Do not use package rootfs for paths under <code>/var</code> or <code>/mnt</code></p>
+Using the `install.sh` hook to modify the contents of `rootfs` is unsupported. It is recommended that you do not do this for now.  
+A solution is planned to be implemented in the near future.
