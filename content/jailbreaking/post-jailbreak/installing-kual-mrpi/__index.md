@@ -30,18 +30,12 @@ You will need to install KUAL (Kindle Unified Application Launcher) and MRPI (Mo
                 <tbody>
                     <tr>
                         <td>K5 and newer</td>
-                        <td>Download and continue to next steps</td>
-                        <td><a href="./Update_KUALBooklet_HDRepack.bin">Update_KUALBooklet_HDRepack.bin</a></td>
+                        <td><a href="https://github.com/KindleModding/PEKI/releases/download/v1.0.0-sh/KUAL.sh">KUAL.sh</a></td>
                     </tr>
                     <tr>
                         <td>K4 and older</td>
                         <td>Download, place in documents folder and move onto <a href="../koreader.html">Installing KOReader</a></td>
                         <td><a href="./KUAL-KDK-1.0.azw2">KUAL-KDK-1.0.azw2</a></td>
-                    </tr>
-                    <tr>
-                        <td>If none of the above methods work</td>
-                        <td>Follow the instructions on the repository and then move onto <a href="../disable-ota.html">Disabling OTA Updates</a></td>
-                        <td><a href="https://github.com/KindleTweaks/PEKI">https://github.com/KindleTweaks/PEKI</a></td>
                     </tr>
                 </tbody>
                 </table>
@@ -66,14 +60,9 @@ You will need to install KUAL (Kindle Unified Application Launcher) and MRPI (Mo
             </div>
         </div>
         <div class="step">
-            <h2>Extracting/Copying KUAL</h2>
+            <h2>Copying KUAL</h2>
             <div class="stepContent">
-            <p class="note">If your device is older than the K5 (Kindle Touch), you only need to copy the <code>KUAL-KDK-1.0.azw2</code> file to your Kindle's <code>documents</code> folder, you can skip the next steps</p>
-            <p class="note">If your device is the K3 (Kindle Keyboard) or older, you should instead use the <code>KUAL-KDK-1.0.azw</code> file and copy it to your Kindle's <code>documents</code> folder, you can skip the remaining steps</p>
-            <p class="important">If you downloaded KUAL for <strong>legacy devices</strong>, extract the .tar.xz to get the <code>Update_KUALBooklet_*_install.bin</code> file</p>
-            <p>Copy the <code>Update_KUALBooklet_HDRepack.bin</code> file (if you chose KUAL Coplate for Kindles newer than the K5) or the <code>Update_KUALBooklet_*_install.bin</code> file (for legacy devices) to your Kindle's <code>mrpackages</code> folder</p>
-                <br/>
-                <img src="./kual_install_bin.png" />
+                <p>Copy the <code>KUAL.sh</code> file to your Kindle's <code>documents</code> folder</p>
             </div>
         </div>
         <div class="step">
@@ -83,21 +72,9 @@ You will need to install KUAL (Kindle Unified Application Launcher) and MRPI (Mo
             </div>
         </div>
         <div class="step">
-            <h2>Running MRPI</h2>
-            <div class="stepContent">
-                <p>On your Kindle, type <code>;log mrpi</code> into the search bar and hit enter</p>
-                <br/>
-                <img src="./run_dispatch.png" />
-            </div>
-        </div>
-        <div class="step">
             <h2>Done</h2>
             <div class="stepContent">
-                <p>Now wait whilst KUAL is installed, your Kindle screen turns white and shows some icons, after a while you will be returned to your library and see a <code>KUAL</code> book appear in it.</p>
-                <p class="highlight">If you see a "Application Error" dialog, you can close it without worry - this is normal behaviour on some modern Kindles</p>
-                <br/>
-                <img src="./success.png" />
-                <p>If you face any issues, please read the <a href="#troubleshooting">troubleshooting</a> section.</p>
+                <p>You can now open KUAL by clicking on the KUAL item in your library</p>
             </div>
         </div>    
     </div>
