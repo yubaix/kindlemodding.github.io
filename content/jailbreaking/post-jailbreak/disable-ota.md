@@ -9,6 +9,9 @@ weight: 3
 
 Kindles automatically update when connected to Wi-Fi, which despite a `hotfix`, can often cause instabilities on jailbroken systems or outright remove the jailbreak.
 
+> [!WARNING]
+> You may skip this if you jailbroke using Winterbreak or Springbreak
+
 <div id="guide">
     <div class="buttons">
         <button id="prev">Previous Step</button>

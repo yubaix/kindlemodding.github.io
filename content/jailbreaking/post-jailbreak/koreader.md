@@ -13,7 +13,7 @@ _KOReader is a document viewer for E Ink devices. Supported formats include EPUB
 > Your Kindle must be jailbroken and have MRPI and KUAL installed to be able to run KOReader.
 
 > [!WARNING]
-> Do not follow this guide if your jailbreak was Springbreak, instead use KPM by running `;kpm install koreader` in the search bar!
+> Do not follow this guide if your jailbreak was Springbreak or Winterbreak, instead use KPM by running `;kpm install koreader` in the search bar!
 > See [repo.kindlemodding.org](https://repo.kindlemodding.org) for more info.
 
 <div id="guide">
